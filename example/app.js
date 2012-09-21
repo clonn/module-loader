@@ -1,8 +1,8 @@
-var enHanceExpress = require('./lib/index.js');
-//var express = require('express');
+var express = require('express');
+var moduleLoader = require('../index');
+var app = express();
 
-var app = enHanceExpress();
+moduleLoader(app).load('modules').run();
 
-app.loadModule();
 app.listen(3000);
 console.log('server init listen 3000');
