@@ -4,7 +4,7 @@ var app = express();
 
 //console.log(require('/root/project/module-loader/example/modules/app1/index.js').lib);
 
-moduleLoader(app).load('modules').run();
+moduleLoader(app).load('modules');
 
 app.listen(3000);
 console.log('server init listen 3000');
