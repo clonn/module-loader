@@ -2,8 +2,6 @@ var express = require('express');
 var moduleLoader = require('../index');
 var app = express();
 
-//console.log(require('/root/project/module-loader/example/modules/app1/index.js').lib);
-
 moduleLoader(app).load('modules');
 
 app.listen(3000);

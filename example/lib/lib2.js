@@ -1,3 +1,3 @@
 module.exports = function () {
-  console.log('run test 2');
+  console.log('run lib 2');
 };
