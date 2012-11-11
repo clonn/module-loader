@@ -1,10 +1,23 @@
 {
   "name": "module-loader",
   "description": "own module load",
+  "author": "Caesar Chi / clonn <clonncd@gmail.com>",
+    "contributors": [
+          { "name": "clonn", "email": "clonncd@gmail.com" }
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "git@github.com:clonn/module-loader.git",
+  "keywords": ["module", "loader", "express-plugin"],
+  "main": "index",
+  "scripts": {
+      "prepublish" : "npm prune"
+  },
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "express": "3.x",
     "mocha": "*"
-  }
+  },
+  "engines": { "node":">= 0.6.0" }
 }
